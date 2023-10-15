@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Service
 public class UserService {
@@ -54,5 +55,8 @@ public class UserService {
         } else {
             throw new ResourceNotFoundException("User not found with id: " + userId);
         }
+    }
+    public List<User> getAllUsers() {
+        return userRepo.findAll();
     }
 }
