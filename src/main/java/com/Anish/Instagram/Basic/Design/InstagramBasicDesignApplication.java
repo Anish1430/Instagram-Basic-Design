@@ -10,5 +10,4 @@ public class InstagramBasicDesignApplication {
 		SpringApplication.run(InstagramBasicDesignApplication.class, args);
 		System.out.println("Anish is Creating a project");
 	}
-
 }

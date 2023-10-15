@@ -22,6 +22,6 @@ public class AuthenticationToken {
         private LocalDate tokenCreationDate;
 
         @OneToOne
-        private User user;
+         User user;
 
     }
