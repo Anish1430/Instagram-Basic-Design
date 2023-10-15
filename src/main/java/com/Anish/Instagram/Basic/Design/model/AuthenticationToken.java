@@ -14,14 +14,14 @@ import java.time.LocalDate;
 @Entity
 public class AuthenticationToken {
 
-        @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-        private String token;
-        private LocalDate tokenCreationDate;
+    private Long tokenId;
+    private String token;
+    private LocalDate tokenCreationDate;
 
-        @OneToOne
-         User user;
-
-    }
+    @OneToOne
+     User user;
+}

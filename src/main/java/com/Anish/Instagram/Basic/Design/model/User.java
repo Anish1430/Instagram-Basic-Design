@@ -14,6 +14,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,13 +22,7 @@ public class User {
     private String firstName;
     private String lastName;
     private Integer age;
-    @Pattern(regexp = ".*@Insta\\.admin\\.in$")
     private String email;
-
     private String phoneNumber;
     private String password;
-
-    public Object getPassword() {
-        return null;
-    }
 }

@@ -17,11 +17,12 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String postData;
+    private Integer postId;
     private Timestamp createdDate;
     private Timestamp updatedDate;
+    private String postData;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    private User user;
+     User user;
 
 }

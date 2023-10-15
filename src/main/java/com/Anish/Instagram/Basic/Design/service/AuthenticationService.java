@@ -12,12 +12,4 @@ import java.time.LocalDate;
 public class AuthenticationService {
     @Autowired
      AuthenticationRepo authenticationrepo;
-
-    public AuthenticationToken signIn(User user) {
-        AuthenticationToken authToken = new AuthenticationToken();
-        authToken.setToken("generated_token_here");
-        authToken.setTokenCreationDate(LocalDate.now());
-        authToken.setUser(user);
-        return authenticationrepo.save(authToken);
-    }
 }
